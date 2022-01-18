@@ -1,0 +1,27 @@
+@use "../custom" as *;
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.line{
+    width: 150px;
+    height: 2px;
+    background-color: $primary;
+    margin: auto;
+    position: relative;
+    &::after{
+        content: "";
+        width: 25px;
+        height: 7px;
+        background-color: $primary;
+        position: absolute;
+        top: 100%;
+        left: 40%;
+}
+}
+
+.border-right{
+    border-right: .1rem solid $gray-300;
+    height: 100%;
+}

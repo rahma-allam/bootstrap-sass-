@@ -1,0 +1,29 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.getstart{
+    background-color: #ddd;
+    .getstart-info{
+        @include gradient;
+    }
+    
+    .getstart-form{
+        background-color: white;
+    
+        h3{
+            background:linear-gradient(to right , $primary, $secondary);
+            -webkit-background-clip: text;
+            background-clip:text;
+            -webkit-text-fill-color: transparent;
+        }
+        .submit-btn{
+            @include gradient;
+            color: white;
+            font-size: 1.5rem;
+    
+        }
+    
+    }
+    
+}
+

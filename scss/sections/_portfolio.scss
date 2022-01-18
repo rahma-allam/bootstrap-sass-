@@ -1,0 +1,69 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.portfolio{
+    .content{
+        max-height: 220px;
+        position: relative;
+        background-color: saddlebrown;
+        border-top: 5px solid $primary;
+        overflow: hidden;
+
+        img{
+            width: 100%;
+           max-height: 100%;
+        }
+        .desc{
+          background-color: rgba($primary , .6);
+          
+          color: white;
+          position: absolute;
+          bottom: 100%;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          visibility: hidden;
+         h4{
+    
+                width: 80%;
+                margin: 50px auto 20px auto;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+     
+}
+
+        &:hover {
+            
+            img{
+                transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                transition:all .5s ease-in-out;
+                -webkit-transition:all .5s ease-in-out;
+                -moz-transition:all .5s ease-in-out;
+                -ms-transition:all .5s ease-in-out;
+                -o-transition:all .5s ease-in-out;
+            }
+            .desc{
+                opacity: 1;
+                visibility: visible;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition:all .5s ease-in-out;
+                -webkit-transition:all .5s ease-in-out;
+                -moz-transition:all .5s ease-in-out;
+                -ms-transition:all .5s ease-in-out;
+                -o-transition:all .5s ease-in-out;
+            }
+            
+        }
+    }
+
+
+}
+

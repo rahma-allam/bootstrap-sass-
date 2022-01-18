@@ -1,0 +1,36 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+
+.testmonials{
+    @include gradient;
+    position: relative;
+
+    .carasouel-caption{
+        padding: 2.5rem 1.5rem ;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+
+        i{
+            color: $primary;
+   
+        }
+    }
+
+    img {
+        width: 6rem;
+        height:6rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        -webkit-transform: translate(-50% , -50%);
+        -moz-transform: translate(-50% , -50%);
+        -ms-transform: translate(-50% , -50%);
+        -o-transform: translate(-50% , -50%);
+        border: 5px solid $primary;
+}
+}

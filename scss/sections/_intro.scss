@@ -1,0 +1,56 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.intro-section{
+
+    @include gradient;
+    height: 100%;
+    h1{
+        font-size: 70px;
+        font-weight: 700;
+
+    }
+
+    p{
+        margin: 20px 0;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+    .video-section{
+        position: relative;
+        cursor: pointer;
+        span{
+            @include positionCenter;
+
+            a{
+
+                i{
+                    font-size: 6rem;
+                    color: $secondary;
+                }
+                
+            }
+            .animated-box{
+               width: 6rem;
+               height: 6rem;
+               border: 5px solid white;
+               border-radius: 50%;
+               -webkit-border-radius: 50%;
+               -moz-border-radius: 50%;
+               -ms-border-radius: 50%;
+               -o-border-radius: 50%;
+               transform-origin: center;
+               animation: pulse 1s linear infinite ;
+               -webkit-animation: pulse 1s linear infinite ;
+                
+             &--border1{
+                 animation-delay: 1s;
+             }  
+             &--border2{
+                 animation-delay: 1.5s;
+            }
+            }
+        }
+    }
+ 
+}

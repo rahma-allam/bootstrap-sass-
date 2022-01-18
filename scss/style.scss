@@ -1,0 +1,18 @@
+@use "custom" as * ;
+
+// import the components
+@use "./components/animations";
+@use "./components/button";
+@use "./components/mixins";
+@use "./components/typography";
+
+// import the sections 
+@use "./sections/nav";
+@use "./sections/intro";
+@use "./sections/companies";
+@use "./sections/services";
+@use "./sections/testmonials";
+@use "./sections/faq";
+@use "./sections/portfolio";
+@use "./sections/getstart";
+@use "./sections/footer";
